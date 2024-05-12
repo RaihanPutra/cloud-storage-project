@@ -1,0 +1,115 @@
+html{
+    height: 100%;
+}
+html, body {
+    margin: 0;
+    height: auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header{
+    background-color: #FFBE98;
+    width: 100%;
+    /* padding: 20px; */
+    /* margin-left: 5%; */
+}
+header > div{
+    padding: 20px;
+}
+
+nav{
+    background-color: #E2BFB3;
+    padding: 20px;
+    display: flex;
+}
+
+
+li{
+    text-decoration: none;
+}
+
+main{
+    flex: 1;
+    background-color: #FEECE2;
+    /* padding: 50px; */
+    display: flex;
+    justify-content: space-between;
+}
+
+div#content {
+    width: 80%;
+    height: auto;
+    padding: 50px;
+}
+
+.group-image {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.group-image > img {
+    margin: 2rem;
+    width: 10%;
+    height: 100%;
+}
+
+aside{
+    background-color: #F7DED0;
+    width: 20%;
+    height: auto;
+
+}
+aside > .flex-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+aside > .flex-center > img {
+    margin-top: 20px;
+    width: 80%;
+    height: auto;
+}
+aside > .flex-center > div > p {
+    margin-top: 20px;
+}
+
+footer{
+    background-color: #E2BFB3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer > div {
+    padding: 20px;
+}
+
+@media screen and (max-width: 450px) {
+
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    div#content {
+        order: 2;
+        width: auto;
+        height: auto;
+        padding: 50px;
+    }
+    aside{
+        order: 1;
+        padding: 50px;
+        width: auto;
+    }
+
+    .group-image > img {
+        margin: 2rem;
+        width: 25%;
+        height: 100%;
+    }
+}
